@@ -1,0 +1,16 @@
+Library for drawing graphical primitives like circle, polygon, arc etc. in OpenGL.
+
+using:
+    // declaration of variable
+    FigLib::Circle c1;
+    
+    OnInit(){
+    // calculation points of the circle
+        c1.calculate(50.0f);
+    }
+    
+    OnPaint(){
+    // drawing citrcle
+        c1.draw(10.0f, 10.0f, 0.0f);
+    }
+    
