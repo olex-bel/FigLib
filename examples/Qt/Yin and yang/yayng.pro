@@ -5,8 +5,9 @@ SOURCES += \
     ../../../ngon.cpp
 
 HEADERS += \
-    canva.h \
-    ../../../ngon.h
+    canva.h 
+
+INCLUDEPATH = ../../../
 
 QT += opengl
 
