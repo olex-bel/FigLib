@@ -46,6 +46,12 @@ namespace FigLib{
     public:
         void calculate(float width, float height, float g);
     };
+
+    class Ellipse: public NGon
+    {
+    public:
+        void calculate(float width, float height, unsigned int quality = 50);
+    };
 };
 
 #endif // NGON_H

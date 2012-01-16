@@ -118,4 +118,26 @@ namespace FigLib {
 
         bCulculated = true;
     }
+
+    void Ellipse::calculate(float width, float height, unsigned int quality)
+    {
+        bCulculated = false;
+        points.clear();
+        unsigned int n = quality;
+
+        if ( n < 3 ) return;
+
+        float rotAngle = 0.0f;
+        float stepAngle = 2.0f * M_PI / n;
+
+        points.resize(n);
+
+        for ( size_t i = 0; i<n; ++i ){
+            points[i].x = width * cos(rotAngle);
+            points[i].y = height * sin(rotAngle);
+            rotAngle += stepAngle;
+        }
+
+        bCulculated = true;
+    }
 };
