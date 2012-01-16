@@ -1,5 +1,4 @@
 #include <QApplication>
-#include <GL/glut.h>
 #include "canva.h"
 
 int main(int ac, char** av)
