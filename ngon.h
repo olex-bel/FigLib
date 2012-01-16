@@ -32,13 +32,13 @@ namespace FigLib{
     class Arc: public NGon
     {
     public:
-        void calculate(float radius, float startAngle, float spanAngle, unsigned int quality = 30);
+        void calculate(float radius, float startAngle, float spanAngle, unsigned int quality = 50);
     };
 
     class Circle: public Polygon
     {
     public:
-        void calculate(float radius, unsigned int quality = 30);
+        void calculate(float radius, unsigned int quality = 50);
     };
 
     class RoundRect: public NGon
